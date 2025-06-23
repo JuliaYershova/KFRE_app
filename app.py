@@ -20,7 +20,7 @@ with col1:
     eGFR = st.number_input("eGFR (ml/min/1.73 m²)", min_value=1.0, max_value=100.0, value=20.0, help="Odhadovaná glomerulární filtrace")
     uACR = st.number_input("uACR (mg/g)", min_value=1.0, max_value=5000.0, value=100.0, help="Poměr albuminu a kreatininu v moči")
     is_male = st.radio("Pohlaví", ["Žena", "Muž"], help="Vyberte pohlaví pacienta") == "Muž"
-    is_north_american = st.checkbox("Severoamerický pacient?", value=False)
+    #is_north_american = st.checkbox("Severoamerický pacient?", value=False)
 
 with col2:
     dm = st.selectbox("Diabetes", ["Nezadáno", "Ano", "Ne"], help="Má pacient diabetes?")
@@ -44,7 +44,7 @@ if st.button("🔍 Vypočítat riziko"):
         "is_male": is_male,
         "eGFR": eGFR,
         "uACR": uACR,
-        "is_north_american": is_north_american,
+        "is_north_american": False,
         "dm": map_optional(dm),
         "htn": map_optional(htn),
         "albumin": to_none(albumin),
