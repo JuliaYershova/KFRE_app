@@ -75,3 +75,8 @@ if st.button("🔍 Vypočítat riziko"):
     """, unsafe_allow_html=True)
 
     st.markdown("<hr>", unsafe_allow_html=True)
+
+st.markdown("""
+<p style='text-align: center;'>Zdroj: https://github.com/lshpaner/kfre?tab=readme-ov-file</p>
+<hr>
+""", unsafe_allow_html=True)
