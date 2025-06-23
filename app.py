@@ -64,7 +64,7 @@ if st.button("🔍 Vypočítat riziko"):
         border-radius: 8px;
         border: 1px solid #ccc;
     ">
-    <h5>Riziko progrese pacienta k selhání ledvin vyžadujícímu dialýzu nebo transplantaci.
+    <h5>Riziko progrese pacienta k selhání ledvin vyžadující dialýzu nebo transplantaci.
 
 </h5>
     <ul>
